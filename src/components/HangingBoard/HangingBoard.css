@@ -1,0 +1,300 @@
+
+   /* HANGING BOARD */
+
+.hanging-board {
+  position: fixed;
+  top: 0;
+  right: max(30px, calc((100vw - 1280px) / 2 + 0px));
+
+  z-index: 20;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  transform-origin: top center;
+
+  animation: windy-board 9s ease-in-out infinite;
+}
+
+   /* THIN STRING */
+
+.hanging-string {
+  position: relative;
+
+  width: 1px;
+  height: 70px;
+
+  background: #4b4034;
+
+  box-shadow:
+    1px 0 0 rgba(255, 255, 255, 0.15);
+
+  transform-origin: top center;
+}
+
+
+/* Little knot where string attaches */
+/* .string-knot {
+  position: absolute;
+
+  top: -2px;
+  left: 50%;
+
+  width: 6px;
+  height: 6px;
+
+  transform: translateX(-50%);
+
+  background: #40362d;
+  border-radius: 50%;
+} */
+
+
+   /* BROKEN WOODEN BOARD */
+
+.wood-board {
+  position: relative;
+  z-index: 20;
+
+  width: 120px;
+  height: 42px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+
+  /* padding: 14px 20px; */
+
+  background:
+    linear-gradient(
+      165deg,
+      transparent 0%,
+      rgba(255, 255, 255, 0.08) 30%,
+      transparent 31%
+    ),
+    linear-gradient(
+      90deg,
+      rgba(80, 45, 20, 0.08),
+      transparent 25%,
+      rgba(80, 45, 20, 0.05) 70%,
+      transparent
+    ),
+    #b9824d;
+
+  border: none;
+
+  clip-path: polygon(
+    2% 7%,
+    96% 2%,
+    99% 18%,
+    97% 91%,
+    76% 94%,
+    51% 91%,
+    27% 96%,
+    3% 91%,
+    1% 25%
+  );
+
+  box-shadow:
+    5px 7px 8px rgba(0, 0, 0, 0.22);
+
+  overflow: hidden;
+}
+
+
+   /* WOOD GRAIN */
+
+.wood-board::before {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  background:
+    repeating-linear-gradient(
+      8deg,
+      transparent 0px,
+      transparent 10px,
+      rgba(70, 38, 17, 0.12) 11px,
+      transparent 12px
+    );
+
+  pointer-events: none;
+}
+
+
+.wood-board::after {
+  content: "";
+
+  position: absolute;
+
+  right: -2px;
+  bottom: -2px;
+
+  width: 35px;
+  height: 20px;
+
+  background: #8e6039;
+
+  clip-path: polygon(
+    25% 0,
+    100% 15%,
+    75% 55%,
+    100% 100%,
+    0 100%,
+    15% 55%
+  );
+}
+
+/* CRACKS */
+
+.wood-crack {
+  position: absolute;
+
+  width: 1px;
+
+  background: rgba(45, 25, 12, 0.65);
+
+  transform-origin: top center;
+}
+
+
+/* Main crack */
+.crack-one {
+  top: 2px;
+  right: 35px;
+
+  height: 27px;
+
+  transform: rotate(24deg);
+}
+
+
+/* Branch */
+.crack-two {
+  top: 18px;
+  right: 29px;
+
+  width: 1px;
+  height: 14px;
+
+  transform: rotate(-42deg);
+}
+
+
+/* Small crack on opposite side */
+.crack-three {
+  bottom: 7px;
+  left: 30px;
+
+  height: 17px;
+
+  transform: rotate(-32deg);
+}
+
+
+   /* TEXT */
+
+.board-text {
+  position: relative;
+  z-index: 2;
+
+  font-size: 12px;
+  font-weight: 500;
+
+  color: #c145a2;
+
+  text-shadow:
+    0 1px rgba(255, 255, 255, 0.15);
+}
+
+.wood-board strong {
+  position: relative;
+  z-index: 2;
+
+  margin-top: 2px;
+
+  font-size: 19px;
+  font-weight: 700;
+
+  color: #2f1d12;
+
+  letter-spacing: 0.2px;
+
+  text-shadow:
+    0 1px rgba(255, 255, 255, 0.12);
+}
+
+
+   /* BREEZE / RANDOM-LOOKING SWING */
+
+@keyframes windy-board {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  7% {
+    transform: rotate(1.5deg);
+  }
+
+  14% {
+    transform: rotate(-2.5deg);
+  }
+
+  21% {
+    transform: rotate(-5deg);
+  }
+
+  29% {
+    transform: rotate(-3deg);
+  }
+
+  37% {
+    transform: rotate(1deg);
+  }
+
+  44% {
+    transform: rotate(4.5deg);
+  }
+
+  52% {
+    transform: rotate(2deg);
+  }
+
+  61% {
+    transform: rotate(-1deg);
+  }
+
+  68% {
+    transform: rotate(-4deg);
+  }
+
+  76% {
+    transform: rotate(-1.5deg);
+  }
+
+  84% {
+    transform: rotate(3deg);
+  }
+
+  92% {
+    transform: rotate(1deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+
+   /* REDUCED MOTION */
+
+@media (prefers-reduced-motion: reduce) {
+  .hanging-board {
+    animation: none;
+  }
+}
