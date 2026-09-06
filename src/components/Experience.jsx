@@ -777,15 +777,42 @@ const AREAS = [
 ];
 
 const RESPONSIBILITIES = [
-  "Took end-to-end ownership of a scalable web application for order placement, from system design through production deployment.",
-  "Built and deployed backend services using FastAPI and developed RESTful APIs for application workflows.",
-  "Integrated backend APIs with a React.js frontend to provide reliable and maintainable application functionality.",
-  "Containerized backend applications using Docker to maintain consistent development and production environments.",
-  "Deployed services on Linux-based company servers and worked with production infrastructure.",
-  "Configured Nginx as a reverse proxy to route traffic efficiently between web and mobile services.",
-  "Designed and implemented modular features for customers to view and download invoices, orders, ledgers, and outstanding reports.",
-  "Applied clean architecture principles to improve code organization, maintainability, and system reliability.",
-  "Participated in code reviews and Agile development cycles while collaborating across development workflows.",
+  <>
+    Took end-to-end ownership of a scalable web application for order placement, from{" "}
+    <strong>system design</strong> through production deployment.
+  </>,
+  <>
+    Built and deployed backend services using <strong>FastAPI</strong> and developed <strong>RESTful APIs</strong> for
+    application workflows.
+  </>,
+  <>
+    Integrated backend APIs with a <strong>React.js</strong> frontend to provide reliable and
+    maintainable application functionality.
+  </>,
+  <>
+    Containerized backend applications using <strong>Docker</strong> to maintain consistent
+    development and production environments.
+  </>,
+  <>
+    Deployed services on Linux-based company servers and worked with production
+    infrastructure.
+  </>,
+  // <>
+  //   Configured Nginx as a reverse proxy to route traffic efficiently between web
+  //   and mobile services.
+  // </>,
+  <>
+    Designed and implemented modular features for customers to view and download
+    invoices, orders, ledgers, and outstanding reports.
+  </>,
+  <>
+    Applied clean architecture principles to improve code organization,
+    maintainability, and system reliability.
+  </>,
+  <>
+    Participated in code reviews and <strong>Agile development cycles</strong> while collaborating
+    across development workflows.
+  </>,
 ];
 
 export default function Experience() {
@@ -831,7 +858,7 @@ export default function Experience() {
               </div>
 
               <div className="rounded-xl border border-border bg-background px-4 py-2.5 text-sm font-medium text-foreground-muted">
-                Feb 2025 — Present
+                Feb 2025 - Present
               </div>
             </div>
 
@@ -860,7 +887,7 @@ export default function Experience() {
               </h3>
 
               <p className="mt-4 leading-7 text-foreground-muted">
-                Working across the complete application lifecycle — from
+                Working across the complete application lifecycle - from
                 understanding requirements and designing systems to developing
                 APIs, integrating frontend applications, containerizing
                 services, and deploying them to production.
@@ -873,9 +900,9 @@ export default function Experience() {
               </p>
 
               <ul className="mt-5 space-y-4">
-                {RESPONSIBILITIES.map((responsibility) => (
+                {RESPONSIBILITIES.map((responsibility, index) => (
                   <li
-                    key={responsibility}
+                    key={index}
                     className="flex gap-3 text-sm leading-6 text-foreground-muted"
                   >
                     <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />

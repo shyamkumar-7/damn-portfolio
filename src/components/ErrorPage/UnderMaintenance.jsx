@@ -41,7 +41,7 @@ const UnderMaintenance = ({ onClose }) => {
 
           {/* Heading */}
           <h2 className="text-xl font-semibold tracking-tight text-foreground">
-            Under Maintenance
+            Under Development
           </h2>
 
           {/* Description */}
