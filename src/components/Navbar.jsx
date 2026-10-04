@@ -12,8 +12,8 @@ const NAV_LINKS = [
   { label: "Projects", href: "/projects" },
   { label: "Experience", href: "/experience" },
   { label: "Get in touch", href: "/contact" },
-  { label: "AI Assistant", href: "/ai-chat", maintenance: true },
-  { label: "Admin", href: "/admin", maintenance: true },
+  // { label: "AI Assistant", href: "/ai-chat", maintenance: true },
+  // { label: "Admin", href: "/admin", maintenance: true },
 ];
 
 export default function Navbar() {
@@ -72,10 +72,9 @@ export default function Navbar() {
   }, [isMenuOpen]);
 
   const linkClass = ({ isActive }) =>
-    `block rounded-lg px-3 py-2 text-sm transition-colors duration-200 ${
-      isActive
-        ? "bg-surface text-primary"
-        : "text-foreground-muted hover:bg-surface hover:text-foreground"
+    `block rounded-lg px-3 py-2 text-sm transition-colors duration-200 ${isActive
+      ? "bg-surface text-primary"
+      : "text-foreground-muted hover:bg-surface hover:text-foreground"
     }`;
 
   const handleNavClick = (event, link) => {
@@ -240,11 +239,10 @@ export default function Navbar() {
 
         {/* Mobile menu */}
         <div
-          className={`overflow-hidden border-t border-border transition-all duration-300 md:hidden ${
-            isMenuOpen
+          className={`overflow-hidden border-t border-border transition-all duration-300 md:hidden ${isMenuOpen
               ? "max-h-96 opacity-100"
               : "max-h-0 opacity-0"
-          }`}
+            }`}
         >
           <div className="mx-auto max-w-7xl px-4 py-3 sm:px-6">
             <div className="flex flex-col gap-1">

@@ -664,11 +664,11 @@ const focusAreas = [
 
 const highlights = [
   {
-    value: "1+",
+    value: "1.5+",
     label: "Years of Experience",
   },
   {
-    value: "300+",
+    value: "350+",
     label: "DSA & SQL Problems",
   },
   {
@@ -731,7 +731,7 @@ export default function About() {
 
           <div className="space-y-5 text-base leading-7 text-foreground-muted">
             <p>
-              I work across the complete software development lifecycle —
+              I work across the complete software development lifecycle -
               understanding requirements, designing solutions, developing APIs,
               building frontend integrations, and deploying applications.
             </p>
@@ -829,7 +829,7 @@ export default function About() {
                 </div>
 
                 <span className="text-sm font-medium text-primary">
-                  2020 — 2024
+                  2020 - 2024
                 </span>
               </div>
 

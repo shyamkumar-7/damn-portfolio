@@ -25,15 +25,15 @@ const geekyBoyImages = {
 
 const STATS = [
   {
-    value: "1+",
+    value: "1.5+",
     label: "Years Experience",
   },
   {
-    value: "300+",
+    value: "350+",
     label: "DSA & SQL Problems",
   },
   {
-    value: "Full-Stack",
+    value: "Frontend + Backend & Full Stack",
     label: "Engineering Focus",
   },
 ];
@@ -86,7 +86,7 @@ const Hero = () => {
 
   return (
     <main className="bg-background text-foreground transition-colors duration-300">
-  
+
       <section className="relative overflow-hidden">
         <div
           aria-hidden="true"
@@ -106,7 +106,7 @@ const Hero = () => {
             lg:px-8 lg:pb-14 lg:pt-6
           "
         >
-    
+
           <div className="order-2 lg:order-1">
             <div
               className="
@@ -164,7 +164,7 @@ const Hero = () => {
               Backend & Full-Stack Developer
             </h2>
 
-                 <p
+            <p
               className="
                 mt-5 max-w-2xl text-base leading-7
                 text-foreground-muted
@@ -263,7 +263,7 @@ const Hero = () => {
             "
           >
             <div className="relative flex w-full items-center justify-center">
-     
+
               <div
                 aria-hidden="true"
                 className="
@@ -273,7 +273,7 @@ const Hero = () => {
                 "
               />
 
-        
+
               <div
                 className="
                   relative z-10 aspect-square w-full
@@ -283,7 +283,7 @@ const Hero = () => {
                   xl:max-w-117.5
                 "
               >
-            
+
                 <img
                   src={previousImage}
                   alt=""
@@ -321,7 +321,7 @@ const Hero = () => {
                 "
               >
                 <div className="flex items-center gap-3">
-             
+
                   <div
                     className="
                       flex h-9 w-9 items-center justify-center
@@ -427,7 +427,7 @@ const Hero = () => {
           </div>
           <div>
             <p className="leading-8 text-foreground-muted">
-              I work across the product lifecycle — translating
+              I work across the product lifecycle - translating
               requirements into working software, designing APIs,
               building responsive interfaces, working with databases,
               containerizing applications, and deploying services to
