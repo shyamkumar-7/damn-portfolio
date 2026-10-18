@@ -174,228 +174,6 @@
 // export default Experience;
 
 
-// import React from "react";
-
-// const experiences = [
-//   {
-//     number: "01",
-//     year: "2024",
-//     period: "2024 — PRESENT",
-//     company: "Company Name",
-//     role: "Software Engineer",
-//     type: "Full-time",
-//     description:
-//       "Building production-ready web applications with a focus on performance, scalability, clean architecture, and user experience.",
-//     impact: [
-//       {
-//         value: "20+",
-//         label: "Features shipped",
-//       },
-//       {
-//         value: "35%",
-//         label: "Performance improvement",
-//       },
-//       {
-//         value: "5+",
-//         label: "Systems / modules",
-//       },
-//     ],
-//     technologies: [
-//       "React",
-//       "Next.js",
-//       "TypeScript",
-//       "Node.js",
-//       "REST APIs",
-//       "Docker",
-//     ],
-//   },
-//   {
-//     number: "02",
-//     year: "2023",
-//     period: "2023 — 2024",
-//     company: "Previous Company",
-//     role: "Software Engineering Intern",
-//     type: "Internship",
-//     description:
-//       "Worked on production applications, contributing to frontend development, backend integration, debugging, and feature delivery.",
-//     impact: [
-//       {
-//         value: "10+",
-//         label: "Features delivered",
-//       },
-//       {
-//         value: "4+",
-//         label: "Core modules",
-//       },
-//       {
-//         value: "100%",
-//         label: "Production focused",
-//       },
-//     ],
-//     technologies: [
-//       "JavaScript",
-//       "React",
-//       "PHP",
-//       "MySQL",
-//       "Git",
-//       "Docker",
-//     ],
-//   },
-// ];
-
-// const Experience = () => {
-//   return (
-//     <section
-//       id="experience"
-//       className="relative overflow-hidden bg-background px-4 py-24 sm:px-6 lg:px-8"
-//     >
-//       {/* Subtle grid */}
-//       <div
-//         className="pointer-events-none absolute inset-0 opacity-[0.025]"
-//         style={{
-//           backgroundImage: `
-//             linear-gradient(to right, currentColor 1px, transparent 1px),
-//             linear-gradient(to bottom, currentColor 1px, transparent 1px)
-//           `,
-//           backgroundSize: "48px 48px",
-//         }}
-//       />
-
-//       <div className="relative mx-auto max-w-7xl">
-//         {/* Header */}
-//         <div className="grid gap-10 lg:grid-cols-[1fr_2fr] lg:items-end">
-//           <div>
-//             <div className="mb-6 flex items-center gap-3">
-//               <span className="h-px w-10 bg-primary" />
-
-//               <span className="text-xs font-semibold uppercase tracking-[0.25em] text-primary">
-//                 02 / Experience
-//               </span>
-//             </div>
-
-//             <h2 className="max-w-xl text-5xl font-bold tracking-[-0.04em] text-foreground sm:text-6xl lg:text-7xl">
-//               Where I've
-//               <br />
-//               <span className="text-primary">made an impact.</span>
-//             </h2>
-//           </div>
-
-//           <div className="max-w-xl lg:justify-self-end">
-//             <p className="text-lg leading-8 text-muted-foreground">
-//               My experience is shaped by building real products, solving
-//               complex problems, and continuously improving how software is
-//               designed, developed, and delivered.
-//             </p>
-//           </div>
-//         </div>
-
-//         {/* Experience */}
-//         <div className="mt-24">
-//           {experiences.map((experience, index) => (
-//             <article
-//               key={experience.number}
-//               className="group border-t border-border py-12 lg:py-16"
-//             >
-//               <div className="grid gap-10 lg:grid-cols-[100px_1fr_280px]">
-//                 {/* Number */}
-//                 <div>
-//                   <span className="font-mono text-sm text-muted-foreground">
-//                     {experience.number}
-//                   </span>
-
-//                   <div className="mt-6 hidden h-px w-8 bg-border lg:block transition-all duration-500 group-hover:w-16 group-hover:bg-primary" />
-//                 </div>
-
-//                 {/* Main content */}
-//                 <div>
-//                   <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
-//                     <span className="text-sm font-medium uppercase tracking-wider text-primary">
-//                       {experience.company}
-//                     </span>
-
-//                     <span className="text-muted-foreground">/</span>
-
-//                     <span className="text-sm text-muted-foreground">
-//                       {experience.type}
-//                     </span>
-//                   </div>
-
-//                   <div className="mt-3 flex flex-col gap-4 sm:flex-row sm:items-baseline sm:justify-between">
-//                     <h3 className="text-3xl font-semibold tracking-tight text-foreground transition-colors duration-300 group-hover:text-primary sm:text-4xl">
-//                       {experience.role}
-//                     </h3>
-
-//                     <span className="font-mono text-xs tracking-wider text-muted-foreground">
-//                       {experience.period}
-//                     </span>
-//                   </div>
-
-//                   <p className="mt-6 max-w-2xl text-base leading-8 text-muted-foreground sm:text-lg">
-//                     {experience.description}
-//                   </p>
-
-//                   {/* Technologies */}
-//                   <div className="mt-8 flex flex-wrap gap-x-5 gap-y-3">
-//                     {experience.technologies.map((technology) => (
-//                       <span
-//                         key={technology}
-//                         className="text-xs font-medium uppercase tracking-wider text-muted-foreground transition-colors duration-300 group-hover:text-foreground"
-//                       >
-//                         {technology}
-//                       </span>
-//                     ))}
-//                   </div>
-//                 </div>
-
-//                 {/* Impact */}
-//                 <div className="lg:border-l lg:border-border lg:pl-8">
-//                   <p className="mb-5 text-xs font-semibold uppercase tracking-[0.2em] text-muted-foreground">
-//                     Selected impact
-//                   </p>
-
-//                   <div className="space-y-5">
-//                     {experience.impact.map((item) => (
-//                       <div
-//                         key={item.label}
-//                         className="flex items-baseline justify-between gap-4"
-//                       >
-//                         <span className="text-2xl font-bold tracking-tight text-foreground">
-//                           {item.value}
-//                         </span>
-
-//                         <span className="text-right text-xs leading-5 text-muted-foreground">
-//                           {item.label}
-//                         </span>
-//                       </div>
-//                     ))}
-//                   </div>
-//                 </div>
-//               </div>
-
-//               {/* Hover indicator */}
-//               <div className="mt-10 h-px w-0 bg-primary transition-all duration-700 group-hover:w-full" />
-//             </article>
-//           ))}
-//         </div>
-
-//         {/* Closing statement */}
-//         <div className="grid gap-6 border-t border-border pt-12 sm:grid-cols-2 sm:items-end">
-//           <p className="text-sm uppercase tracking-[0.2em] text-muted-foreground">
-//             Continuous growth
-//           </p>
-
-//           <p className="text-right text-2xl font-medium tracking-tight text-foreground sm:text-3xl">
-//             Every project is another opportunity to build something better.
-//           </p>
-//         </div>
-//       </div>
-//     </section>
-//   );
-// };
-
-// export default Experience;
-
-
 
 // import React from "react";
 
@@ -737,83 +515,228 @@
 // export default Experience;
 
 
-
 import { NavLink } from "react-router-dom";
 
-const TECHNOLOGIES = [
-  "FastAPI",
-  "React.js",
-  "Docker",
-  "Nginx",
-  "Linux",
-  "REST APIs",
+const EXPERIENCES = [
+  {
+    company: "Kaam Career Pvt Ltd",
+    role: "Full Stack Developer",
+    period: "Mar 2026 – Present",
+    technologies: [
+      "Next.js",
+      "Node.js",
+      "REST APIs",
+      "AWS",
+      "GitLab CI/CD",
+      "SEO",
+      "Claude Code",
+    ],
+    overviewTitle: "Full-stack product engineering",
+    overview:
+      "Contributing to the development and maintenance of Kaabil, a production job-seeker platform for women candidates. Working across frontend interfaces, backend services, recruitment workflows, search visibility, and production delivery.",
+    context:
+      "Kaabil Program is a Mahindra K.C. Group and Gates Foundation initiative powered by Mahindra Rise.",
+    responsibilities: [
+      <>
+        Developed and maintained full-stack features using{" "}
+        <strong>Next.js and Node.js</strong>, covering frontend interfaces,
+        backend services, API integrations, and production workflows.
+      </>,
+      <>
+        Enhanced the existing <strong>job-matching algorithm</strong> by
+        improving matching logic, data handling, and backend workflows to
+        deliver more relevant recommendations based on candidate profiles
+        and job requirements.
+      </>,
+      <>
+        Improved <strong>SEO and search engine indexing</strong> through
+        metadata optimization, page structure improvements, crawlability,
+        and indexable content.
+      </>,
+      <>
+        Enhanced the <strong>Super Admin Panel and Recruiter Dashboard</strong>,
+        improving recruitment workflows for job postings, candidate
+        management, and platform data.
+      </>,
+      <>
+        Maintained <strong>GitLab CI/CD pipelines</strong> and supported
+        production deployments on AWS.
+      </>,
+      <>
+        Used <strong>Claude Code</strong> for AI-assisted code generation,
+        debugging, and refactoring, reviewing and validating generated
+        code before production use.
+      </>,
+    ],
+  },
+  {
+    company: "Kolors India Pvt Ltd",
+    role: "Software Engineer",
+    period: "Feb 2025 – Feb 2026",
+    technologies: [
+      "React.js",
+      "Node.js",
+      "FastAPI",
+      "Python",
+      "Docker",
+      "Nginx",
+      "Linux",
+      "REST APIs",
+    ],
+    overviewTitle: "Backend systems & production delivery",
+    overview:
+      "Developed a B2C order management application for client customers, taking ownership of customer-facing features, API development, business workflows, and production deployment across web and mobile service integrations.",
+    responsibilities: [
+      <>
+        Developed a <strong>B2C order management system</strong> with
+        responsive React.js interfaces and backend workflows for order
+        placement and customer operations.
+      </>,
+      <>
+        Initially developed <strong>REST APIs using Node.js</strong>,
+        then transitioned backend API development to FastAPI to align
+        with the existing mobile application's FastAPI services.
+      </>,
+      <>
+        Built and integrated <strong>FastAPI REST APIs</strong> with
+        the React.js frontend, supporting order management, customer
+        data, invoices, ledgers, and outstanding reports.
+      </>,
+      <>
+        Containerized backend services using <strong>Docker</strong> and
+        deployed applications on Linux-based production servers.
+      </>,
+      <>
+        Configured <strong>Nginx as a reverse proxy</strong> to route
+        requests between web and mobile services.
+      </>,
+      <>
+        Applied <strong>clean architecture principles</strong> and
+        participated in code reviews and Agile development cycles to
+        improve maintainability and system reliability.
+      </>,
+    ],
+  },
 ];
 
 const AREAS = [
   {
-    title: "Backend Development",
+    title: "Full-Stack Development",
     description:
-      "Designed and developed backend services using FastAPI, building RESTful APIs that support reliable application workflows.",
-    technologies: ["FastAPI", "REST APIs", "Python"],
+      "Developed and maintained production applications across frontend interfaces, backend services, API integrations, and business workflows.",
+    technologies: ["React.js", "Next.js", "Node.js"],
   },
   {
-    title: "Frontend Integration",
+    title: "Backend & API Engineering",
     description:
-      "Integrated backend services with React.js applications and developed workflows for customer-facing functionality.",
-    technologies: ["React.js", "API Integration"],
+      "Built RESTful APIs, improved existing backend logic, integrated services, and implemented workflows for customer and recruitment platforms.",
+    technologies: ["FastAPI", "Node.js", "REST APIs"],
+  },
+  {
+    title: "Platform Features & SEO",
+    description:
+      "Enhanced recruitment dashboards, job-matching workflows, metadata, and crawlability to improve platform functionality and discoverability.",
+    technologies: ["Next.js", "SEO", "API Integration"],
   },
   {
     title: "Infrastructure & Deployment",
     description:
-      "Containerized applications with Docker and deployed backend services on Linux-based company servers.",
-    technologies: ["Docker", "Linux"],
-  },
-  {
-    title: "Web Infrastructure",
-    description:
-      "Configured Nginx as a reverse proxy to efficiently route traffic between web and mobile services.",
-    technologies: ["Nginx", "Reverse Proxy"],
+      "Worked with containerized services, Linux-based production environments, reverse proxy configuration, CI/CD pipelines, and cloud deployments.",
+    technologies: ["Docker", "Nginx", "AWS", "GitLab CI/CD"],
   },
 ];
 
-const RESPONSIBILITIES = [
-  <>
-    Took end-to-end ownership of a scalable web application for order placement, from{" "}
-    <strong>system design</strong> through production deployment.
-  </>,
-  <>
-    Built and deployed backend services using <strong>FastAPI</strong> and developed <strong>RESTful APIs</strong> for
-    application workflows.
-  </>,
-  <>
-    Integrated backend APIs with a <strong>React.js</strong> frontend to provide reliable and
-    maintainable application functionality.
-  </>,
-  <>
-    Containerized backend applications using <strong>Docker</strong> to maintain consistent
-    development and production environments.
-  </>,
-  <>
-    Deployed services on Linux-based company servers and worked with production
-    infrastructure.
-  </>,
-  // <>
-  //   Configured Nginx as a reverse proxy to route traffic efficiently between web
-  //   and mobile services.
-  // </>,
-  <>
-    Designed and implemented modular features for customers to view and download
-    invoices, orders, ledgers, and outstanding reports.
-  </>,
-  <>
-    Applied clean architecture principles to improve code organization,
-    maintainability, and system reliability.
-  </>,
-  <>
-    Participated in code reviews and <strong>Agile development cycles</strong> while collaborating
-    across development workflows.
-  </>,
+const ENGINEERING_PRACTICES = [
+  "Clean Architecture",
+  "System Design",
+  "Code Review",
+  "Debugging",
+  "Agile / Scrum",
+  "End-to-End Ownership",
 ];
+
+function ExperienceCard({ experience, index }) {
+  return (
+    <article className="overflow-hidden rounded-3xl border border-border bg-surface shadow-sm">
+      {/* Company header */}
+      <div className="border-b border-border p-6 sm:p-8 lg:p-10">
+        <div className="flex flex-col gap-5 sm:flex-row sm:items-start sm:justify-between">
+          <div>
+            <p className="text-sm font-semibold uppercase tracking-widest text-primary">
+              {index === 0 ? "Current Position" : "Previous Position"}
+            </p>
+
+            <h2 className="mt-3 text-2xl font-bold tracking-tight sm:text-3xl">
+              {experience.role}
+            </h2>
+
+            <p className="mt-2 text-lg font-medium text-foreground-muted">
+              {experience.company}
+            </p>
+          </div>
+
+          <div className="w-fit shrink-0 rounded-xl border border-border bg-background px-4 py-2.5 text-sm font-medium text-foreground-muted">
+            {experience.period}
+          </div>
+        </div>
+
+        {/* Technologies */}
+        <div className="mt-7 flex flex-wrap gap-2">
+          {experience.technologies.map((technology) => (
+            <span
+              key={technology}
+              className="rounded-full border border-border bg-background px-3 py-1.5 text-xs font-medium text-foreground-muted"
+            >
+              {technology}
+            </span>
+          ))}
+        </div>
+      </div>
+
+      {/* Overview and responsibilities */}
+      <div className="grid gap-10 p-6 sm:p-8 lg:grid-cols-[0.75fr_1.25fr] lg:p-10">
+        <div>
+          <p className="text-sm font-semibold uppercase tracking-widest text-primary">
+            Overview
+          </p>
+
+          <h3 className="mt-3 text-2xl font-bold tracking-tight">
+            {experience.overviewTitle}
+          </h3>
+
+          <p className="mt-4 leading-7 text-foreground-muted">
+            {experience.overview}
+          </p>
+
+          {experience.context && (
+            <p className="mt-4 border-l-2 border-primary/50 pl-4 text-sm leading-6 text-foreground-muted">
+              {experience.context}
+            </p>
+          )}
+        </div>
+
+        <div>
+          <p className="text-sm font-semibold uppercase tracking-widest text-primary">
+            Key Contributions
+          </p>
+
+          <ul className="mt-5 space-y-4">
+            {experience.responsibilities.map((responsibility, itemIndex) => (
+              <li
+                key={itemIndex}
+                className="flex gap-3 text-sm leading-6 text-foreground-muted"
+              >
+                <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />
+
+                <span>{responsibility}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </article>
+  );
+}
 
 export default function Experience() {
   return (
@@ -830,93 +753,26 @@ export default function Experience() {
           </h1>
 
           <p className="mt-6 max-w-2xl text-lg leading-8 text-foreground-muted">
-            My professional experience spans backend development, frontend
-            integration, infrastructure, deployment, and end-to-end ownership
-            of production applications.
+            My experience spans full-stack product development, backend
+            engineering, API design, infrastructure, and cloud deployment.
+            I focus on building maintainable systems and delivering features
+            that solve real business problems.
           </p>
         </div>
       </section>
 
-      {/* Main experience */}
-      <section className="mx-auto max-w-7xl px-4 pb-20 sm:px-6 lg:px-8 lg:pb-24">
-        <div className="overflow-hidden rounded-3xl border border-border bg-surface shadow-sm">
-          {/* Company header */}
-          <div className="border-b border-border p-6 sm:p-8 lg:p-10">
-            <div className="flex flex-col gap-6 sm:flex-row sm:items-start sm:justify-between">
-              <div>
-                <p className="text-sm font-semibold uppercase tracking-widest text-primary">
-                  Professional Experience
-                </p>
-
-                <h2 className="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">
-                  Software Programmer
-                </h2>
-
-                <p className="mt-2 text-lg font-medium text-foreground-muted">
-                  Kolors India Pvt Ltd
-                </p>
-              </div>
-
-              <div className="rounded-xl border border-border bg-background px-4 py-2.5 text-sm font-medium text-foreground-muted">
-                Feb 2025 - Present
-              </div>
-            </div>
-
-            {/* Technologies */}
-            <div className="mt-7 flex flex-wrap gap-2">
-              {TECHNOLOGIES.map((technology) => (
-                <span
-                  key={technology}
-                  className="rounded-full border border-border bg-background px-3 py-1.5 text-xs font-medium text-foreground-muted"
-                >
-                  {technology}
-                </span>
-              ))}
-            </div>
-          </div>
-
-          {/* Overview */}
-          <div className="grid gap-10 p-6 sm:p-8 lg:grid-cols-[0.75fr_1.25fr] lg:p-10">
-            <div>
-              <p className="text-sm font-semibold uppercase tracking-widest text-primary">
-                Overview
-              </p>
-
-              <h3 className="mt-3 text-2xl font-bold tracking-tight">
-                End-to-end engineering
-              </h3>
-
-              <p className="mt-4 leading-7 text-foreground-muted">
-                Working across the complete application lifecycle - from
-                understanding requirements and designing systems to developing
-                APIs, integrating frontend applications, containerizing
-                services, and deploying them to production.
-              </p>
-            </div>
-
-            <div>
-              <p className="text-sm font-semibold uppercase tracking-widest text-primary">
-                Key Responsibilities
-              </p>
-
-              <ul className="mt-5 space-y-4">
-                {RESPONSIBILITIES.map((responsibility, index) => (
-                  <li
-                    key={index}
-                    className="flex gap-3 text-sm leading-6 text-foreground-muted"
-                  >
-                    <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />
-
-                    <span>{responsibility}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-        </div>
+      {/* Professional Experience */}
+      <section className="mx-auto max-w-7xl space-y-8 px-4 pb-20 sm:px-6 lg:px-8 lg:pb-24">
+        {EXPERIENCES.map((experience, index) => (
+          <ExperienceCard
+            key={experience.company}
+            experience={experience}
+            index={index}
+          />
+        ))}
       </section>
 
-      {/* Areas of work */}
+      {/* Areas of Work */}
       <section className="border-y border-border bg-surface transition-colors duration-300">
         <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
           <div className="max-w-2xl">
@@ -925,13 +781,13 @@ export default function Experience() {
             </p>
 
             <h2 className="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">
-              Across the stack
+              Across the stack.
             </h2>
 
             <p className="mt-4 leading-7 text-foreground-muted">
-              My role involves more than writing backend code. I work across
-              application development, infrastructure, and production
-              deployment.
+              From application features and backend services to infrastructure
+              and deployment, I contribute across the software development
+              lifecycle.
             </p>
           </div>
 
@@ -973,7 +829,7 @@ export default function Experience() {
         </div>
       </section>
 
-      {/* Engineering approach */}
+      {/* Engineering Approach */}
       <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
         <div className="grid gap-10 lg:grid-cols-2 lg:items-center">
           <div>
@@ -986,22 +842,15 @@ export default function Experience() {
             </h2>
 
             <p className="mt-5 leading-7 text-foreground-muted">
-              I aim to build systems that are understandable, maintainable,
-              and reliable beyond the initial implementation. My development
-              approach includes clean architecture, modular design, debugging,
-              code reviews, and iterative development.
+              I aim to build systems that remain understandable, maintainable,
+              and reliable beyond their initial implementation. My approach
+              emphasizes modular design, thoughtful debugging, code reviews,
+              and iterative development, with a focus on production readiness.
             </p>
           </div>
 
           <div className="grid grid-cols-2 gap-3 sm:gap-4">
-            {[
-              "Clean Architecture",
-              "System Design",
-              "Code Review",
-              "Debugging",
-              "Agile / Scrum",
-              "End-to-End Ownership",
-            ].map((item) => (
+            {ENGINEERING_PRACTICES.map((item) => (
               <div
                 key={item}
                 className="rounded-2xl border border-border bg-surface p-4 text-sm font-medium text-foreground shadow-sm transition-colors duration-300 hover:border-primary/50"
@@ -1025,8 +874,8 @@ export default function Experience() {
           </h2>
 
           <p className="mx-auto mt-4 max-w-xl leading-7 text-foreground-muted">
-            Explore my projects and technical skills to get a better look at
-            the technologies I work with.
+            Explore my projects and technical skills to see how I approach
+            software development and solve engineering challenges.
           </p>
 
           <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
@@ -1049,6 +898,3 @@ export default function Experience() {
     </main>
   );
 }
-
-
-

@@ -16,6 +16,8 @@ const NAV_LINKS = [
   // { label: "Admin", href: "/admin", maintenance: true },
 ];
 
+
+
 export default function Navbar() {
   const [isPaletteOpen, setIsPaletteOpen] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -240,8 +242,8 @@ export default function Navbar() {
         {/* Mobile menu */}
         <div
           className={`overflow-hidden border-t border-border transition-all duration-300 md:hidden ${isMenuOpen
-              ? "max-h-96 opacity-100"
-              : "max-h-0 opacity-0"
+            ? "max-h-96 opacity-100"
+            : "max-h-0 opacity-0"
             }`}
         >
           <div className="mx-auto max-w-7xl px-4 py-3 sm:px-6">

@@ -134,7 +134,7 @@ const Hero = () => {
                 />
               </span>
 
-              Software Engineer · Kolors India Pvt Ltd
+              Software Engineer
             </div>
 
             <p

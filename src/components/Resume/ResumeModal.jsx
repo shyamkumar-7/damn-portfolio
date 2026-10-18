@@ -1,5 +1,5 @@
 import React from "react";
-import resumePdf from "../../assets/resume/Shyam_Resume.pdf";
+import resumePdf from "../../assets/resume/Shyam-Resume-2026-sept.pdf";
 import "./ResumeModal.css";
 
 const ResumeModal = ({ onClose }) => {
@@ -18,29 +18,27 @@ const ResumeModal = ({ onClose }) => {
         <span className="wood-screw screw-bottom-left" />
         <span className="wood-screw screw-bottom-right" />
 
-        {/* Content */}
         <div className="resume-modal-content">
-
           {/* Header */}
           <div className="resume-header">
             <div>
-              {/* <p className="resume-label">
-                Resume
-              </p> */}
-
-              <h3> My Resume </h3>
+              <h3>My Resume</h3>
             </div>
 
             <button
-              type="button" onClick={onClose} aria-label="Close resume" className="resume-close" >
+              type="button"
+              onClick={onClose}
+              aria-label="Close resume"
+              className="resume-close"
+            >
               ×
             </button>
           </div>
 
-          {/* Scrollable resume */}
+          {/* Scrollable Resume */}
           <div className="resume-scroll">
-
             <article className="resume-paper">
+              {/* Decorative wood knots */}
               <span className="wood-knot knot-1" aria-hidden="true" />
               <span className="wood-knot knot-2" aria-hidden="true" />
               <span className="wood-knot knot-3" aria-hidden="true" />
@@ -52,60 +50,68 @@ const ResumeModal = ({ onClose }) => {
               <span className="wood-knot knot-9" aria-hidden="true" />
               <span className="wood-knot knot-10" aria-hidden="true" />
 
-              {/* Name */}
+              {/* Introduction */}
               <header className="resume-intro">
-                <h1>
-                  Shyam Kumar
-                </h1>
+                <h1>Shyam Kumar</h1>
 
                 <p className="resume-role">
                   Software Engineer — Backend & Full-Stack Developer
                 </p>
 
                 <div className="resume-contact">
-                  <span>+91-8953886302</span>
-                  <span>•</span>
-                  <span>kumarshyam03662@gmail.com</span>
-                  <span>•</span>
-                  <span>GitHub</span>
-                  <span>•</span>
-                  <span><a href="https://linkedin.com/in/shyam-kumar-enigma007" target="_blank" >linkedin.com/in/shyam-kumar-enigma007</a></span>
-                </div>
+                  <p >
+                    +91-8953886302
+                  </p>
 
-                {/* <div className="resume-contact">
-                  <span>GitHub</span>
                   <span>•</span>
-                  <span>linkedin.com/in/shyam-kumar-enigma007</span>
-                </div> */}
+
+                  <a href="mailto:kumarshyam03662@gmail.com">
+                    kumarshyam03662@gmail.com
+                  </a>
+
+                  <span>•</span>
+
+                  <a
+                    href="https://github.com/shyamkumar-7"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    GitHub
+                  </a>
+
+                  <span>•</span>
+
+                  <a
+                    href="https://linkedin.com/in/shyam-kumar-enigma007"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    LinkedIn
+                  </a>
+                </div>
               </header>
 
               {/* Professional Summary */}
               <ResumeSection title="Professional Summary">
                 <p>
-                  I don’t just write code, I ship things that work in
-                  production.
-                </p>
-
-                <p>
-                  I’m a Software Engineer who works across the entire product
-                  lifecycle: translating requirements into working software,
-                  building reliable APIs, developing scalable architectures,
-                  and deploying systems that teams actually use in day-to-day
-                  operations.
+                  I’m a Software Engineer who works across the entire
+                  product lifecycle: translating requirements into
+                  working software, building reliable APIs, developing
+                  scalable architectures, and deploying systems that
+                  teams actually use in day-to-day operations.
                 </p>
               </ResumeSection>
 
               {/* Skills */}
               <ResumeSection title="Skills">
-
                 <ResumeItem
                   label="Programming Languages"
-                  text="C++, Python, JavaScript, SQL, HTML5, CSS3, Object-Oriented Programming, Data Structures and Algorithms"
+                  text="JavaScript, Python, C++, SQL, HTML5, CSS3, Object-Oriented Programming, Data Structures and Algorithms"
                 />
 
                 <ResumeItem
                   label="Frameworks & Libraries"
-                  text="React.js, Next.js, Node.js, Express.js, FastAPI, Tailwind CSS, React Router"
+                  text="Node.js, React.js, Next.js, Express.js, FastAPI, Tailwind CSS, React Router"
                 />
 
                 <ResumeItem
@@ -132,114 +138,125 @@ const ResumeModal = ({ onClose }) => {
                   label="Soft Skills"
                   text="Problem-Solving, Analytical Thinking, Communication, Collaboration, Adaptability"
                 />
-
               </ResumeSection>
 
               {/* Professional Experience */}
               <ResumeSection title="Professional Experience">
-
+                {/* Current Role */}
                 <div className="resume-position">
                   <div>
                     <h3>
-                      Software Programmer | Kolors India Pvt Ltd
+                      Full Stack Developer | Kaam Career Pvt Ltd
                     </h3>
                   </div>
 
-                  <span>
-                    Feb 2025 – Present
-                  </span>
+                  <span>March 2026 – Present</span>
                 </div>
 
                 <ResumeBullet>
-                  Took end-to-end ownership of a scalable web application for
-                  order placement, from system design to production deployment
-                  on company servers using Dockerized infrastructure.
+                  Contributed to Kaabil Program, a production job-seeker
+                  platform for women candidates developed as part of a
+                  Mahindra K.C. Group and Gates Foundation initiative
+                  powered by Mahindra Rise.
                 </ResumeBullet>
 
                 <ResumeBullet>
-                  Built and deployed backend services using FastAPI, developing
-                  RESTful APIs and integrating them with a React.js frontend for
-                  reliable application workflows.
+                  Developed and maintained full-stack features using
+                  Next.js and Node.js, working across frontend interfaces,
+                  backend services, API integrations, and production
+                  application workflows.
                 </ResumeBullet>
 
                 <ResumeBullet>
-                  Containerized backend applications using Docker, ensuring
-                  consistent environments across development and production,
-                  and deployed services on Linux-based company servers.
+                  Enhanced the existing job-matching algorithm by
+                  improving matching logic, data handling, and backend
+                  workflows to deliver more relevant job recommendations
+                  based on candidate profiles and job requirements.
                 </ResumeBullet>
 
                 <ResumeBullet>
-                  Configured Nginx as a reverse proxy to route traffic
-                  efficiently between web and mobile services, improving
-                  performance and request handling.
+                  Improved SEO and search engine indexing across the
+                  Next.js application by optimizing metadata, page
+                  structure, crawlability, and indexable content to
+                  strengthen organic discoverability.
                 </ResumeBullet>
 
                 <ResumeBullet>
-                  Designed and implemented modular features enabling customers
-                  to view and download invoices, orders, ledgers, and
-                  outstanding reports using a scalable application architecture.
+                  Enhanced the Super Admin Panel and Recruiter Dashboard,
+                  implementing new features and improving workflows for
+                  managing job postings, recruitment operations,
+                  candidates, and platform data.
+                </ResumeBullet>
+
+                <ResumeBullet>
+                  Maintained GitLab CI/CD pipelines and supported
+                  production deployments on AWS.
+                </ResumeBullet>
+
+                <ResumeBullet>
+                  Leveraged AI-assisted development tools, including
+                  Claude Code, for code generation, debugging,
+                  refactoring, and development workflows while reviewing
+                  and validating generated code before production use.
+                </ResumeBullet>
+
+                {/* Previous Role */}
+                <div className="resume-position">
+                  <div>
+                    <h3>
+                      Software Engineer | Kolors India Pvt Ltd
+                    </h3>
+                  </div>
+
+                  <span>Feb 2025 – Feb 2026</span>
+                </div>
+
+                <ResumeBullet>
+                  Developed a B2C order management system for client
+                  customers, taking ownership of application features
+                  across frontend development, REST API development,
+                  business workflows, and production deployment.
+                </ResumeBullet>
+
+                <ResumeBullet>
+                  Built responsive customer-facing interfaces using
+                  React.js and initially developed REST APIs using
+                  Node.js, implementing backend workflows for order
+                  placement and customer operations.
+                </ResumeBullet>
+
+                <ResumeBullet>
+                  Migrated backend API development from Node.js to
+                  FastAPI to align with the existing mobile application
+                  services, which were already built using FastAPI,
+                  while maintaining consistent business logic across
+                  web and mobile platforms.
+                </ResumeBullet>
+
+                <ResumeBullet>
+                  Developed and integrated FastAPI REST APIs with the
+                  React.js frontend and implemented application
+                  workflows for order management, customer data,
+                  invoices, ledgers, and outstanding reports.
+                </ResumeBullet>
+
+                <ResumeBullet>
+                  Containerized backend services using Docker and
+                  deployed applications on Linux-based production
+                  servers, ensuring consistent environments across
+                  development and production.
                 </ResumeBullet>
 
                 <ResumeBullet>
                   Improved system reliability and maintainability by
-                  structuring APIs with clean architecture principles and
-                  participating in code reviews and Agile development cycles.
+                  structuring APIs with clean architecture principles
+                  and participating in code reviews and Agile
+                  development cycles.
                 </ResumeBullet>
-
-              </ResumeSection>
-
-              {/* Personal Projects */}
-              <ResumeSection title="Personal Projects">
-
-                <div className="resume-position">
-                  <div>
-                    <h3>
-                      E-Commerce Application Development
-                    </h3>
-
-                    <p className="resume-tech">
-                      React.js • Firebase • Tailwind CSS • Node.js • Express.js
-                    </p>
-                  </div>
-
-                  <span>
-                    Oct 2023
-                  </span>
-                </div>
-
-                <ResumeBullet>
-                  Developed a high-performance e-commerce web application using
-                  Vite and React.js, implementing reusable components and
-                  responsive application workflows.
-                </ResumeBullet>
-
-                <ResumeBullet>
-                  Designed a mobile-responsive user interface using Tailwind
-                  CSS, improving usability across desktop and mobile devices.
-                </ResumeBullet>
-
-                <ResumeBullet>
-                  Implemented client-side state management and component-based
-                  architecture to maintain consistent data flow across the
-                  application.
-                </ResumeBullet>
-
-                <ResumeBullet>
-                  Integrated Firebase Authentication and real-time database
-                  services to securely manage user access and application data.
-                </ResumeBullet>
-
-                <ResumeBullet>
-                  Implemented seamless page navigation using React Router and
-                  developed a QR-based digital payment solution for easy and
-                  secure transactions.
-                </ResumeBullet>
-
               </ResumeSection>
 
               {/* Education */}
               <ResumeSection title="Education">
-
                 <div className="resume-position">
                   <div>
                     <h3>
@@ -247,40 +264,37 @@ const ResumeModal = ({ onClose }) => {
                     </h3>
 
                     <p className="resume-tech">
-                      Bachelor of Technology in Computer Science Engineering
+                      Bachelor of Technology in Computer Science
+                      Engineering
                     </p>
                   </div>
 
-                  <span>
-                    2020 – 2024
-                  </span>
+                  <span>2020 – 2024</span>
                 </div>
 
                 <p>
-                  Relevant Coursework: Computer Programming, Object-Oriented
-                  Programming, Software Development Life Cycle (SDLC), Data
-                  Structures and Algorithms, Operating Systems, Database
-                  Management Systems
+                  <strong>Relevant Coursework:</strong>{" "}
+                  Computer Programming, Object-Oriented Programming,
+                  Software Development Life Cycle (SDLC), Data
+                  Structures and Algorithms, Operating Systems,
+                  Database Management Systems
                 </p>
-
               </ResumeSection>
 
-              {/* Achievements */}
+              {/* Achievements and Certifications */}
               <ResumeSection title="Achievements & Certifications">
-
                 <ResumeBullet>
-                  Certified in Python Programming: A Concise Introduction
-                  (Wesleyan University, Coursera) and Meta Professional
-                  Certificates in Front-End and Back-End Development.
+                  Certified in Python Programming: A Concise
+                  Introduction (Wesleyan University, Coursera) and
+                  Meta Professional Certificates in Front-End and
+                  Back-End Development.
                 </ResumeBullet>
 
                 <ResumeBullet>
-                  Solved 300+ DSA and SQL problems on LeetCode, strengthening
-                  problem-solving and analytical skills.
+                  Solved 300+ DSA and SQL problems on LeetCode,
+                  strengthening problem-solving and analytical skills.
                 </ResumeBullet>
-
               </ResumeSection>
-
             </article>
           </div>
 
@@ -322,24 +336,20 @@ const ResumeModal = ({ onClose }) => {
               Download Resume
             </a>
           </div>
-
         </div>
       </div>
     </div>
   );
 };
 
-
 /* ----------------------------- */
-/* Reusable components            */
+/* Reusable Components            */
 /* ----------------------------- */
 
 const ResumeSection = ({ title, children }) => {
   return (
     <section className="resume-section">
-      <h2>
-        {title}
-      </h2>
+      <h2>{title}</h2>
 
       <div className="resume-section-content">
         {children}
@@ -347,7 +357,6 @@ const ResumeSection = ({ title, children }) => {
     </section>
   );
 };
-
 
 const ResumeItem = ({ label, text }) => {
   return (
@@ -357,7 +366,6 @@ const ResumeItem = ({ label, text }) => {
   );
 };
 
-
 const ResumeBullet = ({ children }) => {
   return (
     <div className="resume-bullet">
@@ -366,6 +374,5 @@ const ResumeBullet = ({ children }) => {
     </div>
   );
 };
-
 
 export default ResumeModal;
